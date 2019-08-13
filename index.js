@@ -18,6 +18,7 @@ function contact(){
     document.querySelector(".left li:nth-child(4)").dispatchEvent(new MouseEvent('click'));
 }
 
+
 function hidePage() {
     document.querySelectorAll("main section").forEach(function (page) {
         page.classList.add("hide");
