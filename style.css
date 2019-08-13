@@ -71,9 +71,12 @@ body {
 footer div {
     display: flex;
     justify-content: space-between;
-    color: #3d4246;
+   
     position: relative;
     top: 1.5rem;
+}
+a {
+    color: #3d4246;
 }
 
 footer p {
@@ -286,6 +289,19 @@ button {
     color: #fcfcfc;
 }
 
+button:hover{
+    background-color: #3d4246;
+}
+
+button:active {
+    background-color: #fcfcfc;
+    color: #3d4246;
+}
+
+button:focus {
+    outline: none !important;
+}
+
 #contact > div:nth-child(1) p {
     margin-bottom: 1.5rem;
     color: #3d4246;
@@ -486,11 +502,12 @@ button {
     button {
         margin-top: 2rem;
     }
+    
 }
 
 
 /*    MOBILE VIEW    */
-@media (max-width: 480px){
+@media (max-width:600px){
     
     body{
         flex-direction: column;
@@ -498,7 +515,7 @@ button {
     
     .left {
         position: absolute;
-        background-color: white;
+        background-color: #fcfcfc;
         opacity: 0.9;
         z-index: 100;
         top: 2.8rem;
@@ -545,4 +562,11 @@ button {
         width: 95%;
     }
     
+    #works p:nth-child(1) {
+        text-align: center;
+    }
+    
+    #works p:nth-child(2) {
+        display: none;
+    }
 }
