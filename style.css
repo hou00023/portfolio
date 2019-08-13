@@ -71,10 +71,10 @@ body {
 footer div {
     display: flex;
     justify-content: space-between;
-   
     position: relative;
     top: 1.5rem;
 }
+
 a {
     color: #3d4246;
 }
@@ -159,7 +159,7 @@ section {
     padding: 1.5rem 0;
 
 }
- 
+
 
 
 
@@ -289,7 +289,7 @@ button {
     color: #fcfcfc;
 }
 
-button:hover{
+button:hover {
     background-color: #3d4246;
 }
 
@@ -335,7 +335,7 @@ button:focus {
 }
 
 
-.header{
+.header {
     display: none;
 }
 
@@ -502,71 +502,192 @@ button:focus {
     button {
         margin-top: 2rem;
     }
-    
+
 }
 
 
 /*    MOBILE VIEW    */
-@media (max-device-aspect-ratio: 3/4){
-    
-    body{
+@media (max-device-aspect-ratio: 3/4) {
+
+    body {
         flex-direction: column;
     }
-    
+
     .left {
         position: absolute;
         background-color: #fcfcfc;
         opacity: 0.9;
         z-index: 100;
-        top: 2.8rem;
+        padding-top: 2rem;
+        top: 7%;
         bottom: 0;
-        width: 10rem;
+        width: 20rem;
         transform: translateX(-100%);
         transition: transform 0.5s ease-in;
     }
-    
-    .left.navShow{
+
+    .left.navShow {
         transform: translateX(0);
         transition: transform 0.5s ease-in;
     }
-    
+
     .header {
         width: 93%;
         margin: 0 auto;
-        height: 3rem;
+        height: 8%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .header img {
-        width: 15%;
+        width: 20%;
         height: auto;
     }
-    
+
     .header i {
-        font-size: 1rem;
+        font-size: 3rem;
     }
-    
+
     .left img {
         display: none;
     }
-    
-    main{
+
+    main {
         width: 100%;
     }
-    
-    .home-img{
-        height: 100%;
-        width: 95%;
+
+    .left li {
+        font-size: 2.4rem;
+        margin: 4rem auto
     }
-    
-    #works p:nth-child(1) {
+
+    .left p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        width: 65%;
         text-align: center;
     }
-    
+
+    footer i {
+        font-size: 3rem;
+    }
+
+    .home-img,
+    #about, #contact {
+        height: 100%;
+        width: 95%;
+        margin: 0 2.5%;
+        padding: 0;
+    }
+
+    .welcome {
+        font-size: 4rem;
+        position: absolute;
+        left: auto;
+        right: 10%;
+        top: auto;
+        bottom: 2rem;
+    }
+
+    #about img {
+        width: 80vw;
+        height: 80vw;
+        margin-top: 2rem;
+    }
+
+    .intro {
+        margin: 2rem 0 0 0;
+        width: 80vw;
+    }
+
+    .my-name p:nth-child(1) {
+        font-size: 4rem;
+    }
+
+    .my-name p:nth-child(2) {
+        font-size: 2rem;
+    }
+
+    #works {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+    }
+
+    #works p:nth-child(1) {
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .imgWindow img {
+        width: 90%;
+    }
+
     #works p:nth-child(2) {
         display: none;
+    }
+    
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    #contact > div:nth-child(1) {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        height: 70%
+    }
+
+    #contact > div:nth-child(1) p {
+        margin: 1rem 0;
+        font-size: 4rem;
+    }
+    #contact i{
+        font-size: 2.4rem;
+    }
+    
+    .input{
+        margin: 0;
+    }
+    
+    #contact input{
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    #contact > div:nth-child(2) {
+        width: 90%;
+        height: 20%;
+        margin: auto;
+    }
+
+    #contact > div:nth-child(2) p {
+        font-size: 1.8rem;
+        text-align: right;
+        padding: 0.5rem;
+        width: calc(100% - 1rem);
+        color: #6e6e6e;
+    }
+
+    textarea {
+        height: 30%;
+        font-size: 2rem;
+        margin: 0
+    }
+
+    button {
+        margin-top: 0rem;
+        font-size: 2rem;
+        height: 4rem;
+        width: 10rem;
     }
 }
