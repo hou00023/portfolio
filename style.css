@@ -578,10 +578,15 @@ button:focus {
 
     .home-img,
     #about, #contact {
-        height: 100%;
+        min-height: 100%;
         width: 95%;
         margin: 0 2.5%;
         padding: 0;
+        overflow: scroll;
+    }
+    
+    #about{
+        padding-bottom: 2rem;
     }
 
     .welcome {
@@ -609,6 +614,10 @@ button:focus {
     }
 
     .my-name p:nth-child(2) {
+        font-size: 2rem;
+    }
+    
+    .intro div:nth-child(2){
         font-size: 2rem;
     }
 
